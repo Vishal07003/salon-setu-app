@@ -9,21 +9,21 @@ import HomeScreen from '../screens/HomeScreen';
 const Stack = createNativeStackNavigator();
 
 const AppNavigator = () => {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator
-        initialRouteName="UserLogin"
-        screenOptions={{
-          headerShown: false,
-        }}
-      >
-        <Stack.Screen name="UserLogin" component={UserLogin} />
-        <Stack.Screen name="UserRegister" component={UserRegister} />
-        <Stack.Screen name="SalonOwnerLogin" component={SalonOwnerLogin} />
-        <Stack.Screen name="Home" component={HomeScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+    return (
+        <NavigationContainer>
+            <Stack.Navigator
+            // initialRouteName="UserLogin"
+            // screenOptions={{
+            //     headerShown: false,
+            // }}
+            >
+                {/* <Stack.Screen name="UserLogin" component={UserLogin} /> */}
+                {/* <Stack.Screen name="UserRegister" component={UserRegister} /> */}
+                {/* <Stack.Screen name="SalonOwnerLogin" component={SalonOwnerLogin} /> */}
+                <Stack.Screen name="Home" component={HomeScreen} />
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
 };
 
 export default AppNavigator;
